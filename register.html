@@ -15,12 +15,12 @@
     	<form class="form-signin" method = "post">
 	        <h2 class="form-signin-heading">Create a new account</h2>
 	        <label for="inputUsername" class="sr-only">Username</label>
-	        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
+	        <input type="text" id="inputUsername" name = "inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
 	        <label for="inputPassword" class="sr-only">Password</label>
-	        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+	        <input type="password" id="inputPassword"  name="inputPassword" class="form-control" placeholder="Password" required="">
           Choose Role:
-          <label class="radio-inline"><input type="radio" name="optradio" checked="checked">Applicant</label>
-          <label class="radio-inline"><input type="radio" name="optradio">Hiring Manager</label>
+          <label class="radio-inline"><input type="radio" name="accType" checked = "checked" value = "applicant">Applicant</label>
+          <label class="radio-inline"><input type="radio" name="accType" value = "hiringManager">Hiring Manager</label>
 
         	<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
      	</form>
